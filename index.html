@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div id="meme">CALCULATOR</div>
+    <div id="meme"></div>
 
     <!-- <div id="results"></div> -->
 
@@ -19,35 +21,36 @@
             <button class="calc-btn" id="clear">
                 C
             </button>
-            <button class="calc-btn" id="backspace"></button>
-            <button class="calc-btn" id="percentage"></button>
-            <button class="calc-btn" id="division"></button>
+            <button class="calc-btn" id="backspace">
+            </button>
+            <button class="calc-btn operator" id="modulo" data-value="%">Mod</button>
+            <button class="calc-btn operator" id="division" data-value="/"></button>
         </div>
 
         <div class="button-row2">
             <button class="calc-btn">7</buttons>
             <button class="calc-btn">8</button>
             <button class="calc-btn">9</button>
-            <button class="calc-btn" id="multiply"></button>
+            <button class="calc-btn operator" id="multiply" data-value="*"></button>
         </div>
 
         <div class="button-row3">
             <button class="calc-btn">4</button>
             <button class="calc-btn">5</button>
             <button class="calc-btn">6</button>
-            <button class="calc-btn" id="subtract"></button>
+            <button class="calc-btn operator" id="subtract" data-value="-"></button>
         </div>
         <div class="button-row4">
             <button class="calc-btn">1</button>
             <button class="calc-btn">2</button>
             <button class="calc-btn">3</button>
-            <button class="calc-btn" id="addition"></button>
+            <button class="calc-btn operator" id= "addition" data-value="+"></button>
         </div>
         <div class="button-row5">
-            <button class="calc-btn" id="plus-minus"></button>
+            <button class="calc-btn" id="plus-minus" data-value="toggle-sign"></button>
             <button class="calc-btn">0</button>
-            <button class="calc-btn">.</button>
-            <button class="calc-btn" id="equal"></button>
+            <button class="calc-btn decimal">.</button>
+            <button class="calc-btn operator" id="equal" data-value="="></button>
         </div>
 
     </div>
@@ -56,6 +59,7 @@
         © 2025 Taranjeet Kaur | Powered by caffeine ☕ & JavaScript 💻 
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
